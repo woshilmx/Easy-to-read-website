@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--注意:这个meta节点最后有个结束的'/',一定要注意,否则会产生异常!!!后续我们再分析如何解决这个异常-->
+    <meta charset="UTF-8"/>
+    <title>index</title>
+</head>
+<body>
+<li th:each="file : ${files}">
+    <a th:href="@{|${#request.getRequestURL().toString()}/${file}|}" th:text="${file}"></a>
+    <!--    <span th:text="${#request.getRequestURL()}"></span>-->
+</li>
+</body>
+</html>

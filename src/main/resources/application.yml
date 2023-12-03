@@ -1,0 +1,12 @@
+server:
+  port: 8563
+  servlet:
+    encoding:
+      force: true
+
+resource:
+  path: E:\javaProject2023\Boke\resourse\
+spring:
+  groovy:
+    template:
+      charset: utf-8
